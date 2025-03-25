@@ -24,4 +24,31 @@ $("#calcular").click(function(){
         msg = "Valores iguais";
     }
     alert(msg)
+
+    //ternario
+    msg = valor1 > valor2 ? 'Valor 1 é maior' : 'Valor 1 não é maior';
+
+    //switch
+    switch(parseInt(resultado) % 2){
+        case 0:
+            msg += ' - Resultado é par';
+            break;
+        default:
+            msg += ' - Resultado é ímpar';
+            break;    
+    }
+
+    $("#msg")
+        .text("Mensagem: " + msg)
+        .css({'font-weight': 'bold', 'font-size': '18pt', 'color': 'blue' });
+
+    //fatorial
+    var fatorial = 1;
+    for(var x = 1; x <= valor1; x++) {
+        fatorial *= x;
+    }
+
+    $("#fatorial")
+        .text("Fatorial: " + fatorial)
+        .css({'font-weight': 'bold', 'font-size': '18pt', 'color': 'purple' });
 });
