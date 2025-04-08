@@ -14,7 +14,7 @@ $("#calcular").click(function(){
 
     $("#crescente")
         .text("Valores em ordem crescente: " + crescente)
-        .css({'font-weight': 'bold', 'font-size': '18pt', 'color': 'blue' });
+        .css({'font-weight': 'bold', 'font-size': '18pt', 'color': 'black' });
     
     //Media
     var media = parseFloat((valor1 + valor2 + valor3) / 3);
@@ -35,5 +35,5 @@ $("#calcular").click(function(){
 
     $("#loop")
         .text("Soma de 1 até " + valor2 + " = " + loop)
-        .css({'font-weight': 'bold', 'font-size': '18pt', 'color': 'blue' });
+        .css({'font-weight': 'bold', 'font-size': '18pt', 'color': 'purple' });
 });
